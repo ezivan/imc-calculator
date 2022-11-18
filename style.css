@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/ass/Roboto-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/ass/Roboto-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/ass/Roboto-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+
+body {
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 20.25em;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow:
+    0.3px 0.9px 2.2px rgba(0, 0, 0, 0.02),
+    0.7px 2.1px 5.3px rgba(0, 0, 0, 0.028),
+    1.3px 4px 10px rgba(0, 0, 0, 0.035),
+    2.2px 7.1px 17.9px rgba(0, 0, 0, 0.042),
+    4.2px 13.4px 33.4px rgba(0, 0, 0, 0.05),
+    10px 32px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.form>input {
+  display: block;
+  width: 80%;
+  margin: .5rem auto;
+  padding: .5rem;
+  text-align: center;
+  font-family: inherit;
+  border-radius: .5rem;
+  border: none;
+}
+
+.form>input:focus {
+  outline: 1px solid #7f00ff;
+}
+
+.form>input[readonly]:focus {
+  outline: none;
+}
+
+.form .buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form button {
+  width: 7rem;
+  height: 2rem;
+  display: block;
+  padding: .5rem;
+  color: #fff;
+  background-color: blueviolet;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: 0 1px 7px 2px #d1caca;
+  cursor: pointer;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  right: -9px;
+  width: 42%;
+  height: 45%;
+  border-radius: 30% 70% 70% 30% / 30% 31% 69% 70%;
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+}
+
+.container::after {
+  content: "EZivan";
+  font-size: 2.4rem;
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: rotate(-58deg);
+  font-weight: bold;
+  font-family: cursive;
+  color: #7f00ff4f;
+  filter: blur(.5px);
+}

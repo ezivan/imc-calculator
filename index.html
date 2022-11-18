@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMC Calculator - EZivan</title>
+  <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="circle-decoration"></div>
+    <form action="" class="form">
+      <input type="number" name="width" id="formWidth" placeholder="Peso (kg)">
+      <input type="number" name="height" id="formHeight" placeholder="Altura (cm)">
+      <input type="text" name="imc" id="imcValue" placeholder="IMC" readonly>
+      <input type="text" name="imc-dx" id="imcDx" placeholder="DX. Nutricional" readonly>
+
+      <div class="buttons">
+        <button type="reset">Borrar</button>
+        <button class="btn-submit" type="submit">Calcular</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
