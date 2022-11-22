@@ -20,14 +20,15 @@
   <title>IMC Calculator - EZivan</title>
   <link rel="shortcut icon" href="https://ezivan.github.io/imc-calculator/assets/favicon.svg" type="image/x-icon">
   <link rel="apple-touch-icon" href="https://ezivan.github.io/imc-calculator/assets/favicon.svg">
-  <link rel="stylesheet" href="https://ezivan.github.io/imc-calculator/style.css">
+  <link rel="stylesheet" href="https://ezivan.github.io/imc-calculator/assets/style.css">
 </head>
 
 <body>
+  <p class="error-message">Ingresa los datos necesarios</p>
   <div class="container">
     <div class="circle-decoration"></div>
     <form action="" class="form">
-      <input type="number" name="width" id="formWidth" placeholder="Peso (kg)">
+      <input type="number" name="width" id="formWidth" placeholder="Peso (kg)" autofocus>
       <input type="number" name="height" id="formHeight" placeholder="Altura (cm)">
       <input type="text" name="imc" id="imcValue" placeholder="IMC" readonly>
       <input type="text" name="imc-dx" id="imcDx" placeholder="DX. Nutricional" readonly>
